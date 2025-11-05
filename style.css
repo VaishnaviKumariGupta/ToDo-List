@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(18, 18, 18);
+    padding: 10px;
+}
+
+.todo-app {
+    /* width: 100%; */
+    max-width: 540px;
+    background-color: rgb(246, 246, 248);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2 {
+    color: rgb(49, 18, 92);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+img {
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+.inp {
+    padding: 8px;
+    color: rgb(16, 16, 16);
+    background: rgb(238, 237, 237);
+    border-radius: 13px;
+    width: 75%;
+    font-size: 1.0rem;
+    box-shadow: 0 2px 5px rgba(11, 11, 11, 0.2);
+
+}
+
+.btn {
+    color: rgb(10, 10, 10);
+    width: 20%;
+    padding: 8px;
+    background: rgb(250, 249, 249);
+    border-radius: 13px;
+    font-size: 1.0rem;
+    box-shadow: 0 2px 5px rgba(11, 11, 11, 0.2);
+    font-weight: 600;
+}
+.btn:hover{
+    background: rgb(240, 238, 238);
+    cursor: pointer;
+    font-size: 0.99rem;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    color: black;
+    font-size: 1.2rem;
+    /* margin: 9px 0px; */
+    list-style-type: none;
+    font-weight: 400;
+}
+
+ul li {
+    padding: 10px;
+    margin: 9px 0px;
+    border: 1.5px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(11, 11, 11, 0.2);
+    display: flex;
+    /* make text & button share one row */
+    justify-content: space-between;
+    /* push them to opposite sides */
+    align-items: center;
+    width: 100%;
+}
+
+ul li input[type='checkbox'] {
+    margin: 0 12px;
+    width: 20px;
+    height: 20px;
+    accent-color: #181819;
+    /* modern browsers support this */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* ul button {
+    all: unset;
+    font-size: 1rem;
+    background-color: rgb(9, 255, 255);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 7px;
+} */
+.delete-btn {
+    all: unset;
+}
+
+small {
+    color: red;
+}
